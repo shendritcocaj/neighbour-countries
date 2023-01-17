@@ -1,0 +1,225 @@
+/* **************************************** */
+/* BELOW 1344px (Smaller desktops) */
+/* **************************************** */
+
+@media (max-width: 84em) {
+}
+
+/* **************************************** */
+/* BELOW 1320px (Landscape tablets) */
+/* **************************************** */
+
+@media (max-width: 82.5em) {
+  .countries {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .login {
+    margin-bottom: 4rem;
+    padding: 4.5rem;
+  }
+}
+
+/* **************************************** */
+/* BELOW 1000px (Tablets) */
+/* **************************************** */
+
+@media (max-width: 62.5em) {
+  .welcome {
+    font-size: 5.3rem;
+  }
+  .type {
+    font-size: 4.3rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .countries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .login {
+    margin-bottom: 4rem;
+    padding: 4rem;
+  }
+
+  .message--visible {
+    margin-bottom: 3rem;
+  }
+}
+
+/* **************************************** */
+/* BELOW 880px (Tablets) */
+/* **************************************** */
+
+@media (max-width: 55em) {
+  .welcome {
+    font-size: 4.3rem;
+  }
+  .type {
+    font-size: 3rem;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+  }
+  .login {
+    margin-bottom: 4rem;
+    padding: 3rem;
+  }
+}
+
+/* **************************************** */
+/* BELOW 720px (Small Tablets) */
+/* **************************************** */
+
+@media (max-width: 45em) {
+  .welcome {
+    font-size: 3.8rem;
+  }
+  .type {
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+  .login {
+    margin-bottom: 4rem;
+    padding: 2.5rem;
+  }
+}
+
+/* **************************************** */
+/* BELOW 660px (PHONES) */
+/* **************************************** */
+
+@media (max-width: 41em) {
+  .welcome {
+    font-size: 3.1rem;
+    padding: 1rem;
+  }
+  .type {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+  }
+  .login {
+    margin-bottom: 4rem;
+    width: 44rem;
+  }
+
+  .message--visible {
+    margin-bottom: 2rem;
+  }
+
+  .countries {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr; */
+    align-content: center;
+    justify-content: center;
+  }
+
+  .neighbour {
+    margin-right: 0;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+/* **************************************** */
+/* BELOW 520px (PHONES) */
+/* **************************************** */
+
+@media (max-width: 32.5em) {
+  .welcome {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+  .type {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+  }
+  .login {
+    margin-bottom: 4rem;
+    width: 38rem;
+    padding: 2rem;
+  }
+
+  .login__input {
+    font-size: 1.3rem;
+  }
+
+  .message--visible {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .countries {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr; */
+    align-content: center;
+    justify-content: center;
+  }
+
+  .country__name {
+    font-size: 2.4rem;
+  }
+  .country__region {
+    font-size: 1.5rem;
+  }
+  .country__row span {
+    font-size: 1.8rem;
+  }
+
+  .neighbour {
+    margin-right: 0;
+    justify-self: center;
+    align-self: center;
+  }
+}
+
+/* **************************************** */
+/* BELOW 390px (SMALL PHONES) */
+/* **************************************** */
+
+@media (max-width: 24.4em) {
+  .welcome {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .type {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+  }
+  .login {
+    margin-bottom: 4rem;
+    width: 30rem;
+    padding: 2rem;
+  }
+
+  .login__input {
+    font-size: 1.2rem;
+    width: 30rem;
+  }
+
+  .login__btn {
+    font-size: 2.5rem;
+  }
+
+  .message--visible {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .country__name {
+    font-size: 2rem;
+  }
+  .country__region {
+    font-size: 1.2rem;
+  }
+  .country__row span {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  color: #555;
+  background-image: url('img/flags.jpg');
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.welcome {
+  font-size: 6rem;
+  font-weight: 500;
+  padding: 2rem;
+  display: block;
+  margin-bottom: 10rem;
+  color: rgb(194, 194, 194);
+  text-shadow: inset 2px 2px 2px #888;
+  border-radius: 40px;
+}
+
+.type {
+  font-size: 5rem;
+  margin-bottom: 8rem;
+}
+
+.login {
+  display: flex;
+  margin-bottom: 2rem;
+  width: 54rem;
+  padding: 5rem;
+  box-shadow: 0 1rem 5rem 1rem rgba(24, 100, 171, 0.267);
+  background-color: rgba(46, 139, 216, 0.718);
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.login:hover {
+  box-shadow: 0 3rem 10rem 3rem rgba(107, 122, 118, 0.425);
+  transition: all 0.3s;
+}
+
+.login__input {
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  font-family: inherit;
+  text-align: center;
+  width: 35rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.login__input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px rgba(231, 15, 15, 0.548);
+}
+
+.login__input::placeholder {
+  color: #bbb;
+}
+
+.login__btn {
+  color: #fff;
+  display: inline-block;
+  border: none;
+  background: none;
+  font-size: 3.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login__btn:hover,
+.login__btn:focus {
+  outline: none;
+  color: red;
+  transition: all 0.4s;
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.message--visible {
+  padding: 1rem;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  width: 50rem;
+  text-align: center;
+  color: #c33;
+  font-weight: bold;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 3rem;
+  opacity: 0;
+  transition: opacity 1s;
+  flex-wrap: wrap;
+}
+
+.country {
+  background-color: #fff;
+  box-shadow: 0 3rem 5rem 3rem rgba(24, 100, 171, 0.267);
+  font-size: 2rem;
+  width: 30rem;
+  border-radius: 0.7rem;
+  margin: 0 3rem;
+  transition: all 0.5s ease-in;
+}
+
+.neighbour::before {
+  content: 'Neighbour country';
+  width: 100%;
+  position: absolute;
+  top: -4rem;
+
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.neighbour {
+  transform: scale(0.8) translateY(1rem);
+  margin-left: 0;
+}
+
+.neighbour:hover,
+.country:hover {
+  box-shadow: 0 3rem 10rem 3rem rgba(240, 237, 237, 0.425);
+  transition: all 0.3s;
+}
+
+.country__img {
+  width: 30rem;
+  height: 17rem;
+  object-fit: cover;
+  background-color: #eee;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.country__data {
+  padding: 2.5rem 3.75rem 3rem 3.75rem;
+}
+
+.country__name {
+  font-size: 2.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.country__region {
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.country__row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.country__row span {
+  display: inline-block;
+  margin-right: 2rem;
+  font-size: 2.4rem;
+}
